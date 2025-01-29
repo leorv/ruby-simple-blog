@@ -4,6 +4,8 @@
     <%= f.text_field :title%>
     <%= f.label :content%>
     <%= f.text_area :content%>
+
+    <%= f.text_field :category_id, :value => Category.first.id %>
     
     <%= f.submit %>
     

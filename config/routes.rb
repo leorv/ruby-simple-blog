@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :categories
   get "blogs/index"
   get "blogs/new"
   get "blogs/show"
