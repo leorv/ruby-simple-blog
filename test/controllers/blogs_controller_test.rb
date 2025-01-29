@@ -6,6 +6,11 @@ class BlogsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get new" do
+    get blogs_new_url
+    assert_response :success
+  end
+
   test "should get show" do
     get blogs_show_url
     assert_response :success
